@@ -11,12 +11,29 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 6 help-menu support is complete. Veyra greets the user, captures a
-session-only name, reports the machine's local date and time, performs safe
-basic arithmetic, selects local quotes, jokes, and facts, runs a bounded
-guessing game, lists every required feature, handles invalid input, and exits
-cleanly with a personalized goodbye. Later feature commands are not implemented
-yet.
+Phase 7 rule-based recommendation support is complete. Veyra greets the user,
+captures a session-only name, reports the machine's local date and time,
+performs safe basic arithmetic, selects local quotes, jokes, and facts, runs a
+bounded guessing game, recommends an activity through explicit time rules,
+lists every required feature, handles invalid input, and exits cleanly with a
+personalized goodbye. The perceptron demo and final polish remain pending.
+
+## Roadmap
+
+| Phase | Scope | Status |
+|---:|---|---|
+| 0 | Repository bootstrap | Complete |
+| 1 | Session startup, fallback, and exit | Complete |
+| 2 | Current local date and time | Complete |
+| 3 | Safe four-operator calculator | Complete |
+| 4 | Random quotes, jokes, and facts | Complete |
+| 5 | Number-guessing game | Complete |
+| 6 | Complete help menu | Complete |
+| 7 | Rule-based activity recommendation | Complete |
+| 8 | Fixed-weight perceptron demonstration | Pending |
+| 9 | Name reuse and UX polish | Pending |
+| 10 | Final README documentation | Pending |
+| 11 | Full acceptance and scope audit | Pending |
 
 ## Run
 
@@ -33,6 +50,7 @@ python main.py
 - `joke`, `tell me a joke`
 - `fact`, `random fact`
 - `game`, `guess`, `number game`
+- `activity`, `recommend`
 - `help`, `commands`, `what can you do`
 - `exit`, `quit`, `bye`
 
@@ -51,6 +69,9 @@ collections. No network lookup is performed.
 The guessing game chooses a random whole number from 1 through 20 and allows
 five valid attempts. Non-numeric and out-of-range guesses do not consume an
 attempt.
+
+The activity command uses handwritten time-of-day conditions. It does not use
+a trained recommendation model or retain user preferences.
 
 Other commands receive a friendly fallback until their documented
 implementation phase is complete.

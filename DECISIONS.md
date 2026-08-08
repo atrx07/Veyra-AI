@@ -188,3 +188,20 @@ attempts. Only valid in-range whole-number guesses advance the attempt counter.
 ### Rationale
 This keeps the attempt limit focused on actual guesses and lets a beginner
 recover from typing mistakes without shortening the game.
+
+---
+
+## D-014 — Activity Recommendation Time Bands
+
+**Status:** Accepted
+**Date:** 2026-08-08
+
+### Decision
+Use four local-hour bands: night from 21:00 through 04:59, morning from 05:00
+through 11:59, afternoon from 12:00 through 16:59, and evening from 17:00
+through 20:59.
+
+### Rationale
+Four explicit bands make the handwritten rules easy to demonstrate and test
+while providing meaningfully different suggestions without pretending to use a
+trained recommendation model.
