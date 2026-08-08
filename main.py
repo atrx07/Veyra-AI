@@ -9,6 +9,7 @@ from greetings import (
     create_welcome_message,
     get_user_name,
 )
+from help_menu import print_help
 
 
 BANNER = "=== Veyra ==="
@@ -19,6 +20,7 @@ QUOTE_COMMANDS = {"quote", "motivate me"}
 JOKE_COMMANDS = {"joke", "tell me a joke"}
 FACT_COMMANDS = {"fact", "random fact"}
 GAME_COMMANDS = {"game", "guess", "number game"}
+HELP_COMMANDS = {"help", "commands", "what can you do"}
 
 
 def normalize_command(raw_command):
@@ -41,6 +43,10 @@ def run_assistant():
 
         if not command:
             print("Veyra: I didn't get a command. Please type something.")
+            continue
+
+        if command in HELP_COMMANDS:
+            print_help()
             continue
 
         if command == "calculate" or command.startswith("calculate "):

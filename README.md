@@ -11,11 +11,12 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 5 number-guessing support is complete. Veyra greets the user, captures a
+Phase 6 help-menu support is complete. Veyra greets the user, captures a
 session-only name, reports the machine's local date and time, performs safe
 basic arithmetic, selects local quotes, jokes, and facts, runs a bounded
-guessing game, handles invalid input, and exits cleanly with a personalized
-goodbye. Later feature commands are not implemented yet.
+guessing game, lists every required feature, handles invalid input, and exits
+cleanly with a personalized goodbye. Later feature commands are not implemented
+yet.
 
 ## Run
 
@@ -32,6 +33,7 @@ python main.py
 - `joke`, `tell me a joke`
 - `fact`, `random fact`
 - `game`, `guess`, `number game`
+- `help`, `commands`, `what can you do`
 - `exit`, `quit`, `bye`
 
 Calculator example:
