@@ -11,9 +11,10 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 1 session startup is complete. Veyra greets the user, captures a
-session-only name, handles blank or unknown commands, and exits cleanly with a
-personalized goodbye. Later feature commands are not implemented yet.
+Phase 2 date and time reporting is complete. Veyra greets the user, captures a
+session-only name, reports the machine's local date and time, handles blank or
+unknown commands, and exits cleanly with a personalized goodbye. Later feature
+commands are not implemented yet.
 
 ## Run
 
@@ -21,8 +22,14 @@ personalized goodbye. Later feature commands are not implemented yet.
 python main.py
 ```
 
-Current exit commands are `exit`, `quit`, and `bye`. Other commands receive a
-friendly fallback until their documented implementation phase is complete.
+## Current commands
+
+- `date`, `current date`, `what is the date`, `today's date`
+- `time`, `current time`, `what time is it`
+- `exit`, `quit`, `bye`
+
+Other commands receive a friendly fallback until their documented
+implementation phase is complete.
 
 ## Module layout
 

@@ -140,3 +140,19 @@ until the user enters a non-blank name.
 Re-prompting keeps the captured session name truthful and avoids inventing a
 name or allowing an unusable blank value. The value remains in memory only for
 the current process.
+
+---
+
+## D-011 — Date and Time Display Formats
+
+**Status:** Accepted
+**Date:** 2026-08-08
+
+### Decision
+Display the local date as `Weekday, Month DD, YYYY` and the local time using a
+12-hour clock as `HH:MM AM/PM`.
+
+### Rationale
+These formats are readable in a terminal, match the style shown in the project
+examples, and make the date and time unambiguous without adding locale or
+configuration complexity.

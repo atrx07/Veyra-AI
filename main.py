@@ -1,5 +1,6 @@
 """Coordinate Veyra's startup and command loop."""
 
+from datetime_utils import get_current_date, get_current_time
 from greetings import (
     create_goodbye_message,
     create_welcome_message,
@@ -9,6 +10,8 @@ from greetings import (
 
 BANNER = "=== Veyra ==="
 EXIT_COMMANDS = {"exit", "quit", "bye"}
+TIME_COMMANDS = {"time", "current time", "what time is it"}
+DATE_COMMANDS = {"date", "current date", "what is the date", "today's date"}
 
 
 def normalize_command(raw_command):
@@ -17,7 +20,7 @@ def normalize_command(raw_command):
 
 
 def run_assistant():
-    """Run Veyra's startup sequence and Phase 1 command loop."""
+    """Run Veyra's startup sequence and main command loop."""
     print(BANNER)
     user_name = get_user_name()
     print(create_welcome_message(user_name))
@@ -31,6 +34,14 @@ def run_assistant():
 
         if not command:
             print("Veyra: I didn't get a command. Please type something.")
+            continue
+
+        if command in TIME_COMMANDS:
+            print(f"Veyra: It's currently {get_current_time()}.")
+            continue
+
+        if command in DATE_COMMANDS:
+            print(f"Veyra: Today is {get_current_date()}.")
             continue
 
         print(
