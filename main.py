@@ -49,7 +49,7 @@ def run_assistant():
             continue
 
         if command in HELP_COMMANDS:
-            print_help()
+            print_help(user_name)
             continue
 
         if command == "calculate" or command.startswith("calculate "):

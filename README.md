@@ -11,13 +11,13 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 8 fixed-weight perceptron support is complete. Veyra greets the user,
+Phase 9 name reuse and UX polish is complete. Veyra greets the user,
 captures a session-only name, reports the machine's local date and time,
 performs safe basic arithmetic, selects local quotes, jokes, and facts, runs a
 bounded guessing game, recommends an activity through explicit time rules,
 demonstrates a fixed perceptron calculation, lists every required feature,
-handles invalid input, and exits cleanly with a personalized goodbye. Final UX
-polish, documentation, and acceptance remain pending.
+handles invalid input, and exits cleanly with a personalized goodbye. Final
+README completion and acceptance remain pending.
 
 ## Roadmap
 
@@ -32,7 +32,7 @@ polish, documentation, and acceptance remain pending.
 | 6 | Complete help menu | Complete |
 | 7 | Rule-based activity recommendation | Complete |
 | 8 | Fixed-weight perceptron demonstration | Complete |
-| 9 | Name reuse and UX polish | Pending |
+| 9 | Name reuse and UX polish | Complete |
 | 10 | Final README documentation | Pending |
 | 11 | Full acceptance and scope audit | Pending |
 

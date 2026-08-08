@@ -16,14 +16,19 @@ HELP_ITEMS = (
 )
 
 
-def get_help_text():
+def get_help_text(user_name=None):
     """Return the complete formatted help menu."""
-    lines = ["Veyra: Here's what I can do:"]
+    if user_name:
+        heading = f"Veyra: {user_name}, here's what I can do:"
+    else:
+        heading = "Veyra: Here's what I can do:"
+
+    lines = [heading]
     for command, description in HELP_ITEMS:
         lines.append(f"  {command:<24} - {description}")
     return "\n".join(lines)
 
 
-def print_help():
+def print_help(user_name=None):
     """Print every supported user-facing command and its description."""
-    print(get_help_text())
+    print(get_help_text(user_name))
