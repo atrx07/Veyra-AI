@@ -1,6 +1,7 @@
 """Coordinate Veyra's startup and command loop."""
 
 from calculator import get_calculation_response
+from content import get_random_fact, get_random_joke, get_random_quote
 from datetime_utils import get_current_date, get_current_time
 from greetings import (
     create_goodbye_message,
@@ -13,6 +14,9 @@ BANNER = "=== Veyra ==="
 EXIT_COMMANDS = {"exit", "quit", "bye"}
 TIME_COMMANDS = {"time", "current time", "what time is it"}
 DATE_COMMANDS = {"date", "current date", "what is the date", "today's date"}
+QUOTE_COMMANDS = {"quote", "motivate me"}
+JOKE_COMMANDS = {"joke", "tell me a joke"}
+FACT_COMMANDS = {"fact", "random fact"}
 
 
 def normalize_command(raw_command):
@@ -47,6 +51,18 @@ def run_assistant():
 
         if command in DATE_COMMANDS:
             print(f"Veyra: Today is {get_current_date()}.")
+            continue
+
+        if command in QUOTE_COMMANDS:
+            print(f"Veyra: {get_random_quote()}")
+            continue
+
+        if command in JOKE_COMMANDS:
+            print(f"Veyra: {get_random_joke()}")
+            continue
+
+        if command in FACT_COMMANDS:
+            print(f"Veyra: {get_random_fact()}")
             continue
 
         print(
