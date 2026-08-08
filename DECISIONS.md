@@ -124,3 +124,19 @@ Manual acceptance testing is mandatory. Standard-library `unittest` may be added
 
 ### Rationale
 The PRD explicitly specifies manual testing and does not require an external test framework.
+
+---
+
+## D-010 — Blank Name Handling
+
+**Status:** Accepted
+**Date:** 2026-08-08
+
+### Decision
+If the startup name input is blank or whitespace-only, Veyra will ask again
+until the user enters a non-blank name.
+
+### Rationale
+Re-prompting keeps the captured session name truthful and avoids inventing a
+name or allowing an unusable blank value. The value remains in memory only for
+the current process.

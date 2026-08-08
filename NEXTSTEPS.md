@@ -2,7 +2,7 @@
 
 ## Current Stage
 
-**Governance bootstrap complete; application implementation not yet started.**
+**Phase 1 session startup complete; Phase 2 not started.**
 
 This file should always represent the next concrete engineering actions, not a historical log.
 
@@ -10,20 +10,14 @@ This file should always represent the next concrete engineering actions, not a h
 
 ## Next Actions
 
-1. Create the PRD-recommended application modules:
-   - `main.py`
-   - `greetings.py`
-   - `datetime_utils.py`
-   - `calculator.py`
-   - `content.py`
-   - `game.py`
-   - `ai_concepts.py`
-   - `help_menu.py`
-   - `README.md`
-2. Implement Phase 1 from `STEPS.md`: startup greeting, name capture, command loop, fallback, and exit.
-3. Run the Phase 1 tests from `TESTING.md`.
-4. Update `STATUS.md` only after those tests pass.
-5. Continue through phases in `STEPS.md` without adding out-of-scope features.
+1. Implement Phase 2 from `STEPS.md`:
+   - local date formatting in `datetime_utils.py`
+   - local time formatting in `datetime_utils.py`
+   - `date` and `time` command routing in `main.py`
+2. Run T05 and T06 from `TESTING.md` against the machine's local date and time.
+3. Update `STATUS.md` only for behavior that passes its acceptance path.
+4. Update this queue to Phase 3 after reporting the Phase 2 results.
+5. Do not implement calculator or any later feature during Phase 2.
 
 ---
 
