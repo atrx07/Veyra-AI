@@ -11,12 +11,13 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 7 rule-based recommendation support is complete. Veyra greets the user,
+Phase 8 fixed-weight perceptron support is complete. Veyra greets the user,
 captures a session-only name, reports the machine's local date and time,
 performs safe basic arithmetic, selects local quotes, jokes, and facts, runs a
 bounded guessing game, recommends an activity through explicit time rules,
-lists every required feature, handles invalid input, and exits cleanly with a
-personalized goodbye. The perceptron demo and final polish remain pending.
+demonstrates a fixed perceptron calculation, lists every required feature,
+handles invalid input, and exits cleanly with a personalized goodbye. Final UX
+polish, documentation, and acceptance remain pending.
 
 ## Roadmap
 
@@ -30,7 +31,7 @@ personalized goodbye. The perceptron demo and final polish remain pending.
 | 5 | Number-guessing game | Complete |
 | 6 | Complete help menu | Complete |
 | 7 | Rule-based activity recommendation | Complete |
-| 8 | Fixed-weight perceptron demonstration | Pending |
+| 8 | Fixed-weight perceptron demonstration | Complete |
 | 9 | Name reuse and UX polish | Pending |
 | 10 | Final README documentation | Pending |
 | 11 | Full acceptance and scope audit | Pending |
@@ -51,6 +52,7 @@ python main.py
 - `fact`, `random fact`
 - `game`, `guess`, `number game`
 - `activity`, `recommend`
+- `perceptron`, `neuron`
 - `help`, `commands`, `what can you do`
 - `exit`, `quit`, `bye`
 
@@ -72,6 +74,10 @@ attempt.
 
 The activity command uses handwritten time-of-day conditions. It does not use
 a trained recommendation model or retain user preferences.
+
+The perceptron demo accepts two numeric inputs, applies fixed weights
+`(0.6, -0.4)` and bias `-0.1`, then uses a step activation to return `0` or
+`1`. It does not train or update its values.
 
 Other commands receive a friendly fallback until their documented
 implementation phase is complete.

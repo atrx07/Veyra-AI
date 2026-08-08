@@ -103,14 +103,20 @@ The command maps directly to the concept named in the PRD and makes the feature 
 
 ## D-008 — Perceptron Constants
 
-**Status:** Pending implementation detail  
+**Status:** Accepted
 **Date:** 2026-08-08
 
 ### Decision
-The exact fixed weights and bias will be selected during implementation, centralized as named constants, and documented in this file once chosen.
+Use two numeric inputs with fixed weights **0.6** and **-0.4**, fixed bias
+**-0.1**, and a step activation that returns `1` only when the weighted sum is
+greater than `0`; otherwise return `0`.
 
 ### Constraint
 The values must remain fixed; there is no training or parameter update.
+
+### Rationale
+The small values make both activation outcomes easy to demonstrate by hand
+while keeping the arithmetic readable for a beginner-level explanation.
 
 ---
 
