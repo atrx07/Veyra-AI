@@ -11,11 +11,11 @@ assignment **Virtual AI Assistant (Mini Alexa)**.
 
 ## Current status
 
-Phase 4 random content features are complete. Veyra greets the user, captures
-a session-only name, reports the machine's local date and time, performs safe
-basic arithmetic, selects local quotes, jokes, and facts, handles invalid input,
-and exits cleanly with a personalized goodbye. Later feature commands are not
-implemented yet.
+Phase 5 number-guessing support is complete. Veyra greets the user, captures a
+session-only name, reports the machine's local date and time, performs safe
+basic arithmetic, selects local quotes, jokes, and facts, runs a bounded
+guessing game, handles invalid input, and exits cleanly with a personalized
+goodbye. Later feature commands are not implemented yet.
 
 ## Run
 
@@ -31,6 +31,7 @@ python main.py
 - `quote`, `motivate me`
 - `joke`, `tell me a joke`
 - `fact`, `random fact`
+- `game`, `guess`, `number game`
 - `exit`, `quit`, `bye`
 
 Calculator example:
@@ -44,6 +45,10 @@ The calculator accepts signed integers and decimals. It does not use Python
 
 Quotes, jokes, and facts are selected randomly from predefined local
 collections. No network lookup is performed.
+
+The guessing game chooses a random whole number from 1 through 20 and allows
+five valid attempts. Non-numeric and out-of-range guesses do not consume an
+attempt.
 
 Other commands receive a friendly fallback until their documented
 implementation phase is complete.

@@ -61,11 +61,11 @@ Parse the four supported arithmetic operators explicitly.
 
 ## D-005 — Guessing Game Defaults
 
-**Status:** Accepted as initial default  
+**Status:** Accepted
 **Date:** 2026-08-08
 
 ### Decision
-Prefer a target range of **1–20** with **5 attempts**.
+Use a target range of **1–20** with **5 attempts**.
 
 ### Source basis
 The PRD sample interaction uses those values. The functional requirement itself only mandates a fixed range and limited attempts.
@@ -173,3 +173,18 @@ calculator syntax. Display mathematically whole results without a trailing
 This keeps common terminal results concise while supporting the PRD's basic
 arithmetic examples and simple decimal input without expanding into arbitrary
 expression parsing.
+
+---
+
+## D-013 — Guessing Game Invalid-Input Attempts
+
+**Status:** Accepted
+**Date:** 2026-08-08
+
+### Decision
+Non-numeric and out-of-range guesses do not consume one of the five game
+attempts. Only valid in-range whole-number guesses advance the attempt counter.
+
+### Rationale
+This keeps the attempt limit focused on actual guesses and lets a beginner
+recover from typing mistakes without shortening the game.

@@ -2,7 +2,7 @@
 
 ## Current Stage
 
-**Phase 4 random content features complete; Phase 5 not started.**
+**Phase 5 number-guessing game complete; Phase 6 not started.**
 
 This file should always represent the next concrete engineering actions, not a historical log.
 
@@ -10,17 +10,16 @@ This file should always represent the next concrete engineering actions, not a h
 
 ## Next Actions
 
-1. Implement Phase 5 from `STEPS.md`:
-   - named constants for the 1–20 range and five-attempt limit
-   - standard-library random target generation
-   - nested game input loop with numeric and range validation
-   - higher/lower hints, win handling, and attempt exhaustion
-   - return to the main command loop after the game ends
-   - `game` routing in `main.py`
-2. Run T17 through T23 from `TESTING.md`, including deterministic development checks for both hint directions and attempt exhaustion.
+1. Implement Phase 6 from `STEPS.md`:
+   - complete supported-command list in `help_menu.py`
+   - one-line descriptions and calculator syntax guidance
+   - discovery for activity/recommendation and perceptron commands
+   - exit aliases or primary exit guidance
+   - `help` routing in `main.py`
+2. Run T24 from `TESTING.md` and verify every required user-facing feature is listed.
 3. Update `STATUS.md` only for behavior that passes its acceptance path.
-4. Update this queue to Phase 6 after reporting the Phase 5 results.
-5. Do not implement the help menu or any later feature during Phase 5.
+4. Update this queue to Phase 7 after reporting the Phase 6 results.
+5. Do not implement recommendation or any later feature during Phase 6.
 
 ---
 

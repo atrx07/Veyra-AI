@@ -3,6 +3,7 @@
 from calculator import get_calculation_response
 from content import get_random_fact, get_random_joke, get_random_quote
 from datetime_utils import get_current_date, get_current_time
+from game import play_guessing_game
 from greetings import (
     create_goodbye_message,
     create_welcome_message,
@@ -17,6 +18,7 @@ DATE_COMMANDS = {"date", "current date", "what is the date", "today's date"}
 QUOTE_COMMANDS = {"quote", "motivate me"}
 JOKE_COMMANDS = {"joke", "tell me a joke"}
 FACT_COMMANDS = {"fact", "random fact"}
+GAME_COMMANDS = {"game", "guess", "number game"}
 
 
 def normalize_command(raw_command):
@@ -43,6 +45,10 @@ def run_assistant():
 
         if command == "calculate" or command.startswith("calculate "):
             print(get_calculation_response(command))
+            continue
+
+        if command in GAME_COMMANDS:
+            play_guessing_game()
             continue
 
         if command in TIME_COMMANDS:
