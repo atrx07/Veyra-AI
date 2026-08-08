@@ -156,3 +156,20 @@ Display the local date as `Weekday, Month DD, YYYY` and the local time using a
 These formats are readable in a terminal, match the style shown in the project
 examples, and make the date and time unambiguous without adding locale or
 configuration complexity.
+
+---
+
+## D-012 — Calculator Numeric and Result Formatting
+
+**Status:** Accepted
+**Date:** 2026-08-08
+
+### Decision
+Accept signed integer and decimal operands in the documented space-delimited
+calculator syntax. Display mathematically whole results without a trailing
+`.0`; retain decimal notation for non-whole results.
+
+### Rationale
+This keeps common terminal results concise while supporting the PRD's basic
+arithmetic examples and simple decimal input without expanding into arbitrary
+expression parsing.

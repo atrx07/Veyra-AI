@@ -1,5 +1,6 @@
 """Coordinate Veyra's startup and command loop."""
 
+from calculator import get_calculation_response
 from datetime_utils import get_current_date, get_current_time
 from greetings import (
     create_goodbye_message,
@@ -34,6 +35,10 @@ def run_assistant():
 
         if not command:
             print("Veyra: I didn't get a command. Please type something.")
+            continue
+
+        if command == "calculate" or command.startswith("calculate "):
+            print(get_calculation_response(command))
             continue
 
         if command in TIME_COMMANDS:

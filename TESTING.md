@@ -57,6 +57,12 @@ If the environment requires `python3`, README may show both forms.
 | T12 | `calculate cat + 2` | Friendly invalid-number/syntax error; app continues | FR-05, NFR-02 |
 | T13 | `calculate` | Usage guidance; app continues | FR-05, NFR-01 |
 
+Additional mandatory calculator validation from `AGENTS.md`:
+
+- `calculate 2 ^ 3` produces a friendly unsupported-operator error and the app continues.
+
+This additional governance check does not change the PRD-derived T01–T32 numbering.
+
 ### Random content
 
 | ID | Input / action | Expected result | FR |

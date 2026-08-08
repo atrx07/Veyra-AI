@@ -4,8 +4,8 @@
 
 - Project: **Veyra**
 - Assignment: Virtual AI Assistant (Mini Alexa)
-- Stage: Date and time complete
-- Overall status: **IN PROGRESS — PHASE 2 COMPLETE**
+- Stage: Calculator complete
+- Overall status: **IN PROGRESS — PHASE 3 COMPLETE**
 - Governance baseline: **READY**
 - Last governance update: 2026-08-08
 - Last implementation update: 2026-08-08
@@ -20,7 +20,7 @@
 | FR-02 | Remember/reuse name in session | 🟨 Phase 1 foundation | 🟨 T02 passed; final reuse checks pending |
 | FR-03 | Current date | ✅ | ✅ |
 | FR-04 | Current time | ✅ | ✅ |
-| FR-05 | Basic calculator | ⬜ | ⬜ |
+| FR-05 | Basic calculator | ✅ | ✅ |
 | FR-06 | Random motivational quote | ⬜ | ⬜ |
 | FR-07 | Random joke | ⬜ | ⬜ |
 | FR-08 | Random fact | ⬜ | ⬜ |
@@ -39,13 +39,13 @@ Legend: ⬜ not complete · 🟨 partially complete · ✅ complete
 
 | Requirement | Status |
 |---|---:|
-| Clear first-time-user prompts | 🟨 Through Phase 2 |
-| Invalid input does not crash | 🟨 Through Phase 2 |
-| Standard Python 3 portability | 🟨 Through Phase 2 |
-| No internet requirement | 🟨 Through Phase 2 |
-| Clear single-responsibility functions | 🟨 Through Phase 2 |
-| Immediate responses/no artificial delay | 🟨 Through Phase 2 |
-| Major functions/concepts documented | 🟨 Through Phase 2 |
+| Clear first-time-user prompts | 🟨 Through Phase 3 |
+| Invalid input does not crash | 🟨 Through Phase 3 |
+| Standard Python 3 portability | 🟨 Through Phase 3 |
+| No internet requirement | 🟨 Through Phase 3 |
+| Clear single-responsibility functions | 🟨 Through Phase 3 |
+| Immediate responses/no artificial delay | 🟨 Through Phase 3 |
+| Major functions/concepts documented | 🟨 Through Phase 3 |
 
 ---
 
@@ -53,15 +53,15 @@ Legend: ⬜ not complete · 🟨 partially complete · ✅ complete
 
 | Constraint | Current status |
 |---|---:|
-| No API/network calls | ✅ Through Phase 2 |
-| No real ML | ✅ Through Phase 2 |
-| No third-party AI/data libraries | ✅ Through Phase 2 |
-| No persistence | ✅ Through Phase 2 |
-| No voice/audio | ✅ Through Phase 2 |
-| No GUI/web UI | ✅ Through Phase 2 |
-| No multi-user/concurrency | ✅ Through Phase 2 |
+| No API/network calls | ✅ Through Phase 3 |
+| No real ML | ✅ Through Phase 3 |
+| No third-party AI/data libraries | ✅ Through Phase 3 |
+| No persistence | ✅ Through Phase 3 |
+| No voice/audio | ✅ Through Phase 3 |
+| No GUI/web UI | ✅ Through Phase 3 |
+| No multi-user/concurrency | ✅ Through Phase 3 |
 
-These entries cover implementation through Phase 2. Re-audit each later phase and the final application before submission.
+These entries cover implementation through Phase 3. Re-audit each later phase and the final application before submission.
 
 ---
 
@@ -76,7 +76,13 @@ These entries cover implementation through Phase 2. Re-audit each later phase an
   - T01, T02, T25, T26, T27, T28
 - Phase 2 applicable manual tests passed: **2 / 2**
   - T05, T06
-- Manual acceptance tests passed: **8 / 32**
+- Phase 3 applicable manual tests passed: **7 / 7**
+  - T07, T08, T09, T10, T11, T12, T13
+- Additional calculator checks passed:
+  - unsupported operator
+  - malformed expression
+  - signed and decimal operands
+- Manual acceptance tests passed: **15 / 32**
 - PRD minimum manual inputs satisfied: **NO**
 - FR-01 through FR-14 verified: **NO**
 - Final acceptance run completed: **NO**
@@ -86,7 +92,7 @@ These entries cover implementation through Phase 2. Re-audit each later phase an
 ## Documentation Progress
 
 - Governance pack: ✅
-- Application README: 🟨 Accurate through Phase 2
+- Application README: 🟨 Accurate through Phase 3
 - Command documentation: ✅ governance baseline
 - AI/ML/DL reference: ✅
 - Final testing record: ⬜
@@ -95,4 +101,4 @@ These entries cover implementation through Phase 2. Re-audit each later phase an
 
 ## Current Blockers
 
-None. Phase 3 can begin from `NEXTSTEPS.md` after the Phase 2 result is reviewed.
+None. Phase 4 can begin from `NEXTSTEPS.md` after the Phase 3 result is reviewed.
