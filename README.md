@@ -136,13 +136,14 @@ These limits keep the program faithful to the beginner-level offline PRD.
 
 ## Testing
 
-All 14 functional requirements have passed the 32-case manual matrix during
-incremental phase verification. That coverage includes invalid calculator,
-game, perceptron, blank, and unknown inputs; content variation; name reuse;
-date/time; help; fallback; and all exit aliases.
+All 14 functional requirements passed the final 32-case manual matrix on
+2026-08-08 using Python 3.14.6 on Windows 11. Coverage included invalid
+calculator, game, perceptron, blank, and unknown inputs; content variation;
+name reuse; date/time; help; fallback; and all exit aliases.
 
-The final clean acceptance run and scope audit are Phase 11 and remain pending
-until they are recorded in `TESTING.md` and `STATUS.md`.
+The final module-import, dependency, scope, portability, maintainability,
+performance, help, documentation, and clean-terminal run audits also passed.
+Detailed acceptance evidence is recorded in `TESTING.md` and `STATUS.md`.
 
 ## Roadmap
 
@@ -159,4 +160,4 @@ until they are recorded in `TESTING.md` and `STATUS.md`.
 | 8 | Fixed-weight perceptron demonstration | Complete |
 | 9 | Name reuse and UX polish | Complete |
 | 10 | Final README documentation | Complete |
-| 11 | Full acceptance and scope audit | Pending |
+| 11 | Full acceptance and scope audit | Complete |

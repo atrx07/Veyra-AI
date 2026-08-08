@@ -12,10 +12,10 @@ Optional standard-library automated tests may supplement this plan, but they do 
 
 Record for final verification:
 
-- Python version:
-- Operating system:
-- Date tested:
-- Tester:
+- Python version: Python 3.14.6
+- Operating system: Windows 11 (10.0.26200)
+- Date tested: 2026-08-08
+- Tester: Codex
 
 Expected launch command:
 
@@ -114,29 +114,29 @@ This matrix exceeds the PRD minimum of 20 manual inputs and should be used as th
 
 ### Portability
 
-- [ ] no third-party imports
-- [ ] no network calls
-- [ ] no OS-specific application requirement
-- [ ] starts with standard Python 3
+- [x] no third-party imports
+- [x] no network calls
+- [x] no OS-specific application requirement
+- [x] starts with standard Python 3
 
 ### Maintainability
 
-- [ ] each feature has a clearly named function
-- [ ] modules match documented responsibilities
-- [ ] no giant feature logic dumped into `main.py`
-- [ ] important constants have names
+- [x] each feature has a clearly named function
+- [x] modules match documented responsibilities
+- [x] no giant feature logic dumped into `main.py`
+- [x] important constants have names
 
 ### Performance
 
-- [ ] no `sleep()` used for decoration
-- [ ] command responses appear immediately
+- [x] no `sleep()` used for decoration
+- [x] command responses appear immediately
 
 ### Documentation
 
-- [ ] README run instructions work
-- [ ] help output matches implemented commands
-- [ ] AI/ML/DL concept comments are accurate
-- [ ] no documentation claims real learning/training
+- [x] README run instructions work
+- [x] help output matches implemented commands
+- [x] AI/ML/DL concept comments are accurate
+- [x] no documentation claims real learning/training
 
 ---
 
@@ -168,19 +168,28 @@ When a bug fix changes behavior:
 
 ---
 
-## 7. Final Test Record Template
+## 7. Final Test Record
 
 ```text
-Final acceptance run:
-Date:
-Python:
-OS:
-Tests passed: __ / 32
-FR-01..FR-14 verified: YES / NO
-Third-party dependencies found: YES / NO
-Network use found: YES / NO
-Persistent state found: YES / NO
-Crashes during invalid-input tests: YES / NO
-Submission-ready: YES / NO
-Notes:
+Final acceptance run: PASS
+Date: 2026-08-08
+Python: 3.14.6
+OS: Windows 11 (10.0.26200)
+Tests passed: 32 / 32
+FR-01..FR-14 verified: YES
+Third-party dependencies found: NO
+Network use found: NO
+Persistent state found: NO
+Crashes during invalid-input tests: NO
+Submission-ready: YES
+Notes: The README run-through, module import, source-scope, portability,
+maintainability, performance, help, and documentation audits all passed.
 ```
+
+Execution coverage:
+
+- T01–T16, T24–T26, T29, and T31 were exercised in a complete terminal session.
+- T17–T23 used the interactive game with a deterministic target of `10`, as permitted by the matrix, to verify both hint directions, invalid inputs, winning, and attempt exhaustion.
+- T27, T28, and T32 were exercised in separate fresh terminal sessions.
+- T30 called the recommendation helper with morning and afternoon hours and confirmed different rule paths.
+- The additional unsupported calculator operator check passed and returned control to the main prompt.
