@@ -4,9 +4,23 @@ Veyra is a small, offline, rule-based Python terminal assistant. It implements
 the internship assignment **Virtual AI Assistant (Mini Alexa)**, project code
 **AI-INT-P1-VAA**, while using Veyra as its application name.
 
+This project was created by **Arppith Andrews**
+([@atrx07](https://github.com/atrx07)) as part of the **AI internship by
+Internmo**.
+
 The project demonstrates Python fundamentals, explicit command routing, input
 validation, and beginner-level AI/ML/DL concepts without using a trained model
 or external service.
+
+## Author and internship
+
+- **Author:** Arppith Andrews
+- **GitHub:** [@atrx07](https://github.com/atrx07)
+- **Program:** AI internship by Internmo
+- **Submission:** Virtual AI Assistant (Mini Alexa), project AI-INT-P1-VAA
+
+Veyra is Arppith Andrews's implementation and presentation name for this
+Internmo AI internship assignment.
 
 ## Requirements
 
