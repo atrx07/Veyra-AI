@@ -19,7 +19,7 @@ or external service.
 - **Program:** AI internship by Internmo
 - **Submission:** Virtual AI Assistant (Mini Alexa), project AI-INT-P1-VAA
 
-Veyra is Arppith Andrews's implementation and presentation name for this
+Veyra is Arppith's implementation and presentation name for this
 Internmo AI internship assignment.
 
 ## Requirements
