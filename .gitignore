@@ -1,0 +1,19 @@
+# Local agent governance and reference material
+AGENTS.md
+ARCHITECTURE.md
+CODE_STANDARDS.md
+COMMAND_SPEC.md
+DECISIONS.md
+GOVERNANCE_INDEX.md
+NEXTSTEPS.md
+PROJECT.md
+REQUIREMENTS.md
+STATUS.md
+STEPS.md
+TESTING.md
+docs/AI_ML_DL_REFERENCE.md
+docs/PRD_TRACEABILITY.md
+
+# Python-generated files
+__pycache__/
+*.py[cod]

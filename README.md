@@ -117,8 +117,7 @@ or training loop, so it is not a trained neural network.
 - `ai_concepts.py`: activity rules and fixed perceptron calculation
 - `help_menu.py`: complete user-facing command list
 
-The repository-root governance files define scope, architecture, commands,
-testing, traceability, decisions, and project progress.
+The modules remain deliberately small and use only Python's standard library.
 
 ## Limitations and non-capabilities
 
@@ -143,7 +142,8 @@ name reuse; date/time; help; fallback; and all exit aliases.
 
 The final module-import, dependency, scope, portability, maintainability,
 performance, help, documentation, and clean-terminal run audits also passed.
-Detailed acceptance evidence is recorded in `TESTING.md` and `STATUS.md`.
+The final acceptance summary is included here so the submitted documentation
+remains self-contained.
 
 ## Roadmap
 
